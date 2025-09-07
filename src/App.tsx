@@ -1,6 +1,7 @@
 import './App.css'
 import { Button } from './components/ui/button'
 import { useToast } from './hooks/toast'
+import  Landing from './pages/landing/Landing'
 
 function App() {
   const { addToast } = useToast()
@@ -15,8 +16,8 @@ function App() {
           position: "bottom-right"
         })
       }}>Login</Button>
-      <div className='tex'>
-
+      <div className='text-red-500'>
+        <Landing />
       </div>
     </>
   )
